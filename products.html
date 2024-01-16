@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Responsive nav bar -->
+    <nav class=" bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+
+        <h1 class=" text-2xl  ">GREENDEN</h1>
+        <!-- menu svg  -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden" id="phone-menubox">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class=" gap-5 text-gray-600 hidden md:flex">
+            <li><a class="hover:underline" href="home.html">Home</a></li>
+            <li><a class="hover:underline" href="products.html">Products</a></li>
+            <li><a class="hover:underline" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+     <!-- side nav bar -->
+  <section id="sidenav" class="bg-green-200 fixed z-10 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right:-50%;"> 
+    <div class="text-right p-5">
+      <p id="close-nav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class=" gap-10 flex flex-col items-center  text-gray-600 md:flex">
+    <li><a class="hover:underline" href="home.html">Home</a></li>
+    <li><a class="hover:underline" href="products.html" target="_blank">Products</a></li>
+    <li><a class="hover:underline" href="contact.html" target="_blank">Contact</a></li>
+  </ul>
+</section>
+
+    <!-- our products and input -->
+    <section class="text-center"  >
+        <h1 class="font-bold text-3xl mt-5 " >Our Products</h1>
+        <input type="text" placeholder="Search for a Product" id="search_input" class="border-2 border-gray-400 mt-5 p-3"
+            style="width: 80%;">
+   
+
+    <!-- section plants -->
+    <section id="product_container" class=" m-5 grid grid-cols-2 text-center gap-2 md:grid-cols-4 ">
+        <div>
+            <img src="./images/product-1.png" class="inline hover:shadow-xl transform hover:-translate-y-2 "  alt="">
+            <h1>Rose Plant</h1>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./images/product-2.png" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="">
+            <h1>Lily Plant</h1>
+            <p>$10</p>
+        </div>
+        <div>
+            <img src="./images/product-3.png" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="">
+            <h1>New pet Plant</h1>
+            <p>$15</p>
+        </div>
+        <div>
+            <img src="./images/product-4.png" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="">
+            <h1>Hibuscus Rose</h1>
+            <p>$16</p>
+        </div>
+        <div>
+            <img src="./images/product-5.png" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="">
+            <h1>Snake Plant</h1>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./images/product-6.png" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="">
+            <h1>Rose Mary</h1>
+            <p>$18</p>
+        </div>
+        <div>
+            <img src="./images/product-7.png" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="">
+            <h1>spider Plant</h1>
+            <p>$14</p>
+        </div>
+        <div>
+            <img src="./images/product-8.png" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="">
+            <h1>Circulant Plant</h1>
+            <p>$20</p>
+        </div>
+    </section>
+</section>
+
+    <!-- footer -->
+<section class="bg-green-300 flex flex-col gap-5 p-5 mt-5">
+    <h1 class="font-bold text-2xl">Greenden</h1>
+    <p>The standard chunk of lorem ipsum used since the 1500s is reproduced below for those interest</p>
+    <p>@ 2021 Greenday.com</p>
+  </section>
+
+ 
+   
+  <script src="product.js"></script>
+</body>
+
+</html>
